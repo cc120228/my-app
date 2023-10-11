@@ -1,0 +1,8 @@
+.Announcement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background-color: rgb(240, 167, 79);
+    color: black;
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import HeaderBar from './components/HeaderBar/HeaderBar'
+import Announcement from './components/HeaderBar/Announcement/Announcement';
+import MainPage from './pages/main/MainPage'
+import FemalePage from './pages/product/female/FemalePage'
+import MalePage from './pages/product/male/MalePage'
+import ProductDetailPage from './pages/product/ProductDetailPage';
+import ScrollToTop from "./components/ScrollToTop";
+import Settlement from './pages/settlement/Settlement';
+
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+  
+      <ScrollToTop />
+      <Announcement></Announcement>
+      <HeaderBar></HeaderBar>
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/Female" element={<FemalePage />}></Route>
+        <Route path="/Male" element={<MalePage />}></Route>
+        <Route path="/ProductDetailPage" element={<ProductDetailPage />}></Route>
+        <Route path="/Settlement" element={<Settlement />}></Route>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 

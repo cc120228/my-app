@@ -1,0 +1,9 @@
+.categoryItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-photo{
+    height: 400px;
+    width: 300px;
+}

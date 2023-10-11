@@ -1,0 +1,32 @@
+.ProductCard{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    min-height: 100px;
+}
+
+
+.card{
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0);
+}
+
+.product-photo{
+    cursor: pointer;
+}
+
+.product-name{
+    cursor: pointer;
+    min-height: 60px;
+}
+
+.product-photo{
+    height: 250px;
+    width: 250px;
+}
+
+
+

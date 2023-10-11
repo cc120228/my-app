@@ -1,0 +1,51 @@
+@import url('https://fonts.google.com/specimen/Dancing+Script');
+
+.HeaderBar{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+
+.company-icon-wrapper{
+    display: flex;
+    align-items: center;
+    height: 60px;   
+}
+
+.company-icon{
+    cursor: pointer;
+}
+
+.company-icon{
+    height: 50px;
+}
+
+.left-part{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.page-btn{
+    margin-right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-family: 'Dancing Script';
+}
+
+.right-part{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.languages{
+    font-size: 14px;
+    cursor: pointer;
+}

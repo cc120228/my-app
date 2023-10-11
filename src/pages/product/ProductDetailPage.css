@@ -1,0 +1,20 @@
+.ProductDetailPage{
+    display: flex;
+}
+
+.photo-left-part{
+    width: 600px;
+}
+
+.product-photo-big{
+    height: 550px;
+    border-radius: 10px
+}
+
+.photo-right-part{
+    width: 500px;
+} 
+
+.path{
+    display: flex;
+}

@@ -1,0 +1,9 @@
+.Categories{
+    display: flex;
+    width: 100vw;
+}
+
+.category-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
